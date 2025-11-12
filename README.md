@@ -69,9 +69,38 @@ pip install -r requirements.txt
 Crea un file `.env` nella root del progetto:
 
 ```env
-OPENAI_API_KEY=your-api-key-here
-TAVILY_API_KEY=your-tavily-key-here
-FLASK_SECRET_KEY=your-secret-key-here
+# Copy this file to .env and fill in your API keys
+
+# === OpenAI ===
+OPENAI_API_KEY=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
+
+# === Flight Data (Amadeus) ===
+VOLI_API_KEY=hdPf3R8swBDbJdc7Ryxp07tlb2ELHUYo
+VOLI_API_SECRET=0mrPDoSeElf9lUHg
+
+# === Weather ===
+OPENWEATHER_API_KEY=8944cfbb82118ca79d84a44bbdb9bf3c
+
+# === Monuments (Google Places) ===
+MONUMENTS_API_KEY=AIzaSyBW9zBZjUV67q1KKJDxhDPwAQDAlNok_IQ
+
+# === Events (Ticketmaster) ===
+TICKETMASTER_API_KEY=LQuDjOy9WlbtgcWN5WuPASpIYWyGUGWd
+
+# === GitHub (Optional, for higher rate limits) ===
+GITHUB_TOKEN=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
+
+# === Model Configuration (Optional) ===
+OPENAI_MODEL=gpt-3.5-turbo
+OPENAI_TEMPERATURE=0.7
+REQUEST_TIMEOUT=15
+
+# === RAG Configuration (Optional) ===
+CHUNK_SIZE=800
+CHUNK_OVERLAP=100
+RAG_TOP_K=5
+
+PYTHONIOENCODING=utf-8
 ```
 
 ### 3. Utilizzo
@@ -279,6 +308,7 @@ Per domande o problemi:
 - [Barbara Geroli](https://github.com/BarbaraGeroli)
 - [Sharon Burgo](https://github.com/sharonburg)
 - [Mattia Stefanizzi](https://github.com/luxmattiastef)
+
 
 
 
